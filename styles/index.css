@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: 0.5em solid rgb(241, 5, 241);
+    padding: 5em;
+    margin: 10em;
+}
+
+.tituloPagina {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+
+
+
+}
+
+.flex {
+    width: auto;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+
+
+}
