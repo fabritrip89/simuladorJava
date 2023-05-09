@@ -192,7 +192,11 @@ header{
 }
 
 .cart-empty{
-padding: 20px;
-text-align: center;
+    padding: 20px;
+    text-align: center;
+}
 
+
+.hidden{
+    display: none;
 }
