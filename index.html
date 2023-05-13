@@ -1,141 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Tienda</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<header>
-			<h1>Tienda</h1>
 
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Paddle To the Moon</title>
+	<link rel="stylesheet" href="styles\styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header>
+		<h1 class="tituloToThemoon">Paddle To The Moon</h1> 
+		
 			<div class="container-icon">
-				<div class="container-cart-icon">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="icon-cart"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-						/>
-					</svg>
-					<div class="count-products">
-						<span id="contador-productos">0</span>
-					</div>
+			<div class="container-cart-icon">
+				 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="icon-cart">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
 				</div>
+			</div> 
 
-				<div class="container-cart-products hidden-cart">
-					<div class="row-product hidden">
-						<div class="cart-product">
-							<div class="info-cart-product">
-								<span class="cantidad-producto-carrito">1</span>
-								<p class="titulo-producto-carrito">Zapatos Nike</p>
-								<span class="precio-producto-carrito">$80</span>
-							</div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="icon-close"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product hidden">
+					<div class="cart-product">
+						<div class="info-cart-product">
+							<span class="cantidad-producto-carrito">1</span>
+							<p class="titulo-producto-carrito">Zapatos Nike</p>
+							<span class="precio-producto-carrito">$80</span>
 						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="icon-close">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
 					</div>
+				</div>
 
-					<div class="cart-total hidden">
-						<h3>Total:</h3>
-						<span class="total-pagar">$200</span>
-					</div>
-					<p class="cart-empty">El carrito está vacío</p>
+				<div class="cart-total hidden">
+					<h3>Total:</h3>
+					<span class="total-pagar">$200</span>
 				</div>
-			</div>
-		</header>
-		<div class="container-items">
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Zapatos Nike</h2>
-					<p class="price">$80</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Audifonos</h2>
-					<p class="price">$20</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Reloj</h2>
-					<p class="price">$50</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Smartwatch</h2>
-					<p class="price">$90</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Perfume</h2>
-					<p class="price">$50</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
+				<p class="cart-empty">El carrito está vacío</p>
 			</div>
 		</div>
+	</header>
+	<div class="container-items">
+		<div class="item">
+			<figure>
+				<img data-sizes="auto" src="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-240-0.webp" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-480-0.webp 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-640-0.webp 640w" class="js-product-slide-img js-image-open-mobile-zoom product-slider-image img-absolute img-absolute-centered lazyautosizes blur-up js-open-mobile-zoom lazyloaded" alt="Paleta Padel Royal America Master Pro Carbono Paddle" sizes="300px" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-480-0.webp 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-640-0.webp 640w">
+			</figure>
+			<div class="info-product">
+				<h2>RoyalPadel America</h2>
+				<p class="price">$20</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img data-sizes="auto" src="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-240-0.webp" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-480-0.webp 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-640-0.webp 640w" class="js-product-slide-img js-image-open-mobile-zoom product-slider-image img-absolute img-absolute-centered lazyautosizes blur-up js-open-mobile-zoom lazyloaded" alt="Paleta Padel Royal America Master Pro Carbono Paddle" sizes="300px" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-480-0.webp 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/america-master-pro1-c3f9f1bd0fdcece99816645647695156-640-0.webp 640w">
+			</figure>
+			<div class="info-product">
+				<h2>RoyalPadel America</h2>
+				<p class="price">$20</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="//d3ugyf2ht6aenh.cloudfront.net/assets/themes/new_linkedman/static/images/empty-placeholder.png?1180691606" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w" alt="Paleta Padel Tecnifibre Wall Breaker 365 Paddle" data-expand="-10" class="js-item-image js-item-image-primary item-image img-absolute img-absolute-centered fade-in lazyloaded" width="608" height="608" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w">
+			</figure>
+			<div class="info-product">
+				<h2>Adidas Metal 3.2</h2>
+				<p class="price">$274.000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="//d3ugyf2ht6aenh.cloudfront.net/assets/themes/new_linkedman/static/images/empty-placeholder.png?1180691606" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w" alt="Paleta Padel Tecnifibre Wall Breaker 365 Paddle" data-expand="-10" class="js-item-image js-item-image-primary item-image img-absolute img-absolute-centered fade-in lazyloaded" width="608" height="608" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w">
+			</figure>
+			<div class="info-product">
+				<h2>Adidas MetalBone 3.2</h2>
+				<p class="price">$274.000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="//d3ugyf2ht6aenh.cloudfront.net/assets/themes/new_linkedman/static/images/empty-placeholder.png?1180691606" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w" alt="Paleta Padel Tecnifibre Wall Breaker 365 Paddle" data-expand="-10" class="js-item-image js-item-image-primary item-image img-absolute img-absolute-centered fade-in lazyloaded" width="608" height="608" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w">
+			</figure>
+			<div class="info-product">
+				<h2>Adidas MetalBone 3.2</h2>
+				<p class="price">$274.000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="//d3ugyf2ht6aenh.cloudfront.net/assets/themes/new_linkedman/static/images/empty-placeholder.png?1180691606" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w" alt="Paleta Padel Tecnifibre Wall Breaker 365 Paddle" data-expand="-10" class="js-item-image js-item-image-primary item-image img-absolute img-absolute-centered fade-in lazyloaded" width="608" height="608" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/16wabr3652_011-e34fd31036d2ec69a816763877467695-320-0.webp 320w">
+			</figure>
+			<div class="info-product">
+				<h2>Adidas MetalBone 3.2</h2>
+				<p class="price">$274.000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		
+		<div class="item">
+			<figure>
+				<img src="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/adidas-metalbone-32-91-cfc12a7caa8f2692ab16799415045305-240-0.webp" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/adidas-metalbone-32-91-cfc12a7caa8f2692ab16799415045305-480-0.webp 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/adidas-metalbone-32-91-cfc12a7caa8f2692ab16799415045305-640-0.webp 640w" class="js-product-slide-img js-image-open-mobile-zoom product-slider-image img-absolute img-absolute-centered lazyautosizes blur-up ls-is-cached lazyloaded" alt="Paleta Padel Adidas Metalbone 3.2 Paddle" sizes="300px" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/adidas-metalbone-32-91-cfc12a7caa8f2692ab16799415045305-480-0.webp 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/adidas-metalbone-32-91-cfc12a7caa8f2692ab16799415045305-640-0.webp 640w">
+					
+			</figure>
+			<div class="info-product">
+				<h2>Adidas MetalBone 3.2</h2>
+				<p class="price">$274.000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="//d3ugyf2ht6aenh.cloudfront.net/assets/themes/new_linkedman/static/images/empty-placeholder.png?1180691606" data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-nox-nerbo-wpt-official-racket-2022-eva-11-e9bdbf85a6e875799316497182294031-640-01-421ac6682e7085968e16504585351959-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-nox-nerbo-wpt-official-racket-2022-eva-11-e9bdbf85a6e875799316497182294031-640-01-421ac6682e7085968e16504585351959-320-0.webp 320w" alt="Paleta Padel NOX Nerbo WPT World Padel Tour Oficial Paddle" data-expand="-10" class="js-item-image js-item-image-primary item-image img-absolute img-absolute-centered fade-in lazyloaded" width="640" height="640" srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-nox-nerbo-wpt-official-racket-2022-eva-11-e9bdbf85a6e875799316497182294031-640-01-421ac6682e7085968e16504585351959-240-0.webp 240w, //d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-nox-nerbo-wpt-official-racket-2022-eva-11-e9bdbf85a6e875799316497182294031-640-01-421ac6682e7085968e16504585351959-320-0.webp 320w">
+			</figure>
+			<div class="info-product">
+				<h2>Nox ML 10 España  - 2023</h2>
+				<p class="price">$50</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+	</div>
 
-		<script src="index.js"></script>
-	</body>
+	<script src="/js/index.js"></script>
+	<script src="js\welcomePage.js"></script>
+</body>
+
 </html>
