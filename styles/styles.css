@@ -2,19 +2,33 @@
 *::after,
 *::before,
 * {
-    margin: 2px;
-    padding: 0;
+   margin: 0;
+    padding: 2.5;
     box-sizing: border-box;
     color: black;
+    font-family: kanit;
+    
+      
+      
   
 }
+/* 
+@media screen and (max-width: 480px){  ver estoooooooooooooooooooooooooooooooooooooooooooooooooooooo
+    *{ background-color: blue;
+
+} */
+
 
 
 body {
-    margin: 2.5 auto;
+    margin: 0 ;
+    padding: 2.5;
     max-width: 1200px;
     font-family: 'Lato';
     color: red;
+
+    
+   
 
 }
 
@@ -164,6 +178,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    
 }
 
 .item {
