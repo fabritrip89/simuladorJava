@@ -12,11 +12,6 @@
       
   
 }
-/* 
-@media screen and (max-width: 480px){  ver estoooooooooooooooooooooooooooooooooooooooooooooooooooooo
-    *{ background-color: blue;
-
-} */
 
 
 
@@ -99,7 +94,7 @@ header {
     right: 0;
 
     background-color: #fff ;
-    opacity: 85%;
+    opacity: 95%;
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
